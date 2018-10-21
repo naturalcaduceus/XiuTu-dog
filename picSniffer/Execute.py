@@ -72,8 +72,11 @@ def startSearch0(var1,var2,var3,tree,x,root1):#所有子文件夹
             if os.path.splitext(filename)[1] in Const_Image_Format :#筛选格式
 
                 sizePingheng=51#现在只改这个就好了
-                pingheng=100/(sizePingheng-1)**2
-                im2=Image.open(os.path.join(root,filename))
+                pingheng = 100 / (sizePingheng - 1)** 2
+                try:
+                    im2 = Image.open(os.path.join(root, filename))
+                except:
+                    print('Skip pic {} since can"t open it'.format(filename))
                 j=pingheng*((sizePingheng-1)**2-_dhash.classfiy_dHash(im1,im2,size=(sizePingheng,sizePingheng-1)))
 
                 count1+=1;x.set('已处理'+str(count1)+'张');root1.update()#显示处理过程
