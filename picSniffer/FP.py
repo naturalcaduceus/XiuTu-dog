@@ -367,7 +367,7 @@ ft2 = tkFont.Font(family='Fixdsys', size=10)
 
 
 #标题
-Label(root, text='欢迎使用嗅图狗',  bg="yellow",font=ft1).pack(side=TOP)
+#Label(root, text='欢迎使用嗅图狗',  bg="yellow",font=ft1).pack(side=TOP)
 
 frm = Frame(root,bg='green')
 frm.pack(side=TOP,fill=BOTH)
