@@ -433,7 +433,7 @@ ft1 = tkFont.Font(family='Fixdsys', size=12)
 ft2 = tkFont.Font(family='Fixdsys', size=10)
 
 #标题
-Label(root, text='欢迎使用嗅图狗', bg="yellow", font=ft1).pack(side=TOP)
+#Label(root, text='欢迎使用嗅图狗', bg="yellow", font=ft1).pack(side=TOP)
 
 frm = Frame(root, bg='green')
 frm.pack(side=TOP, fill=BOTH)
@@ -672,7 +672,7 @@ c02 = Checkbutton(frm_B2,
                   text='开启推荐\n（路径下图太多则建议关闭）\n需要纯净的点击预览请去掉勾！',
                   variable=var4,
                   command=Func1)
-#c02.select()#生成时默认开启一下（推荐太耗时间、太费事了!）
+# c02.select()#生成时默认开启一下（推荐太耗时间、太费事了!）
 c02.grid(row=0, column=1, sticky=N)
 
 B0 = Button(frm_B2,
